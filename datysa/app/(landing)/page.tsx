@@ -1,4 +1,4 @@
-import LandingClient from './LandingClient';
+import { redirect } from 'next/navigation';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,5 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <LandingClient />;
+  // Redirect legacy/duplicate landing route to the root page
+  redirect('/');
+  return null;
 }
