@@ -1,0 +1,219 @@
+.section {
+  background: #ffffff;
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d3b66;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  text-align: center;
+  color: #224;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid principal: formulário + info */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Formulário */
+.form {
+  background: #f7fbff;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(13,59,102,0.04);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #16324f;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(13,59,102,0.12);
+  background: #fff;
+  font-size: 0.95rem;
+  color: #123;
+}
+
+.textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(13,59,102,0.12);
+  background: #fff;
+  font-size: 0.95rem;
+  color: #123;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.submit {
+  background: #0d3b66;
+  color: #fff;
+  padding: 0.65rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.alt {
+  color: #0d3b66;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Mensagens */
+.success {
+  margin-top: 0.75rem;
+  color: #0b7a3a;
+  font-weight: 600;
+}
+
+.error {
+  margin-top: 0.75rem;
+  color: #a81e1e;
+  font-weight: 600;
+}
+
+/* Sidebar info */
+.info {
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+}
+
+.infoTitle {
+  margin: 0 0 0.5rem 0;
+  color: #0d3b66;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.infoSub {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #16324f;
+  font-weight: 700;
+}
+
+.benefits {
+  margin: 0.5rem 0 0 1rem;
+  color: #224;
+}
+
+.benefits li {
+  margin-bottom: 0.4rem;
+  line-height: 1.45;
+}
+
+.small {
+  color: #506b86;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+/* ContactSection.module.css */
+
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  color: #333;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  cursor: pointer;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.popupSuccess {
+  border-left: 4px solid #2AC769; /* verde */
+}
+
+.popupError {
+  border-left: 4px solid #EF4444; /* vermelho */
+}
+
+

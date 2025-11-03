@@ -1,0 +1,156 @@
+/* Variables */
+:root {
+  --primary: #0D3B66;
+  --accent: #2AC769;
+  --light: #F4F7FA;
+  --white: #FFFFFF;
+}
+
+/* Section */
+.section {
+  padding: 5rem 0;
+  background-color: var(--light);
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+/* Carousel */
+.carouselWrapper {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 2rem 1rem;
+  margin: -2rem -1rem;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Client Cards */
+.clientCard {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+  width: 250px;
+  height: 150px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clientCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.logoContainer {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.clientLogo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.clientCard:hover .clientLogo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Dot Navigation */
+.carouselNav {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.carouselDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(13, 59, 102, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.carouselDot.active {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+.carouselDot:hover {
+  background: var(--accent);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .clientCard {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .carousel {
+    gap: 1rem;
+  }
+  
+  .clientCard {
+    width: 160px;
+    height: 100px;
+  }
+  
+  .carouselNav {
+    margin-top: 1rem;
+  }
+}

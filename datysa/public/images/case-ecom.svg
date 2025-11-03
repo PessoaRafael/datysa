@@ -1,0 +1,84 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Case E-commerce Power BI style">
+  <defs>
+    <linearGradient id="pb-bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fbfbfb" />
+    </linearGradient>
+    <filter id="pb-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- outer card -->
+  <rect x="12" y="12" width="1176" height="576" rx="12" fill="url(#pb-bg)" stroke="#eee" />
+
+  <!-- title row -->
+  <g transform="translate(40,36)">
+    <text x="0" y="0" font-family="Inter, Roboto, system-ui" font-size="20" font-weight="700" fill="#0b3b5a">E-commerce — Painel de Vendas</text>
+    <rect x="420" y="-18" width="96" height="30" rx="6" fill="#f2c811" />
+    <text x="440" y="4" font-size="12" font-weight="700" fill="#111">POWER BI</text>
+  </g>
+
+  <!-- KPI tiles (Power BI style) -->
+  <g transform="translate(40,80)">
+    <!-- tile 1 -->
+    <rect x="0" y="0" width="220" height="100" rx="8" fill="#fff" filter="url(#pb-shadow)" stroke="#f0f4f7"/>
+    <text x="16" y="28" font-size="11" fill="#748f9d">Receita (30d)</text>
+    <text x="16" y="64" font-size="22" font-weight="700" fill="#0b3b5a">R$ 24.5k</text>
+
+    <!-- tile 2 -->
+    <rect x="244" y="0" width="220" height="100" rx="8" fill="#fff" filter="url(#pb-shadow)" stroke="#f0f4f7"/>
+    <text x="260" y="28" font-size="11" fill="#748f9d">Pedidos</text>
+    <text x="260" y="64" font-size="22" font-weight="700" fill="#0b3b5a">1.847</text>
+
+    <!-- tile 3 -->
+    <rect x="488" y="0" width="220" height="100" rx="8" fill="#fff" filter="url(#pb-shadow)" stroke="#f0f4f7"/>
+    <text x="504" y="28" font-size="11" fill="#748f9d">Taxa de conversão</text>
+    <text x="504" y="64" font-size="22" font-weight="700" fill="#d47f00">3.2% (+78%)</text>
+
+    <!-- tile 4 -->
+    <rect x="732" y="0" width="220" height="100" rx="8" fill="#fff" filter="url(#pb-shadow)" stroke="#f0f4f7"/>
+    <text x="748" y="28" font-size="11" fill="#748f9d">Ticket médio</text>
+    <text x="748" y="64" font-size="22" font-weight="700" fill="#0b3b5a">R$ 132,45</text>
+  </g>
+
+  <!-- clustered column chart (Power BI look) -->
+  <g transform="translate(40,200)">
+    <rect x="0" y="0" width="760" height="320" rx="8" fill="#fff" stroke="#f0f5f9" />
+    <text x="16" y="26" font-size="12" fill="#748f9d">Receita por dia (últimos 7 dias)</text>
+
+    <!-- y labels -->
+    <g transform="translate(12,50)" fill="#9fb0c4" font-size="11">
+      <text x="0" y="0">30k</text>
+      <text x="0" y="44">20k</text>
+      <text x="0" y="88">10k</text>
+    </g>
+
+    <!-- columns -->
+    <g transform="translate(80,50)">
+      <rect x="0" y="80" width="36" height="120" rx="4" fill="#f2c811" />
+      <rect x="60" y="40" width="36" height="160" rx="4" fill="#0b3b5a" />
+      <rect x="120" y="56" width="36" height="144" rx="4" fill="#7fb3d5" />
+      <rect x="180" y="32" width="36" height="168" rx="4" fill="#f2c811" />
+      <rect x="240" y="72" width="36" height="128" rx="4" fill="#0b3b5a" />
+      <rect x="300" y="48" width="36" height="152" rx="4" fill="#7fb3d5" />
+      <rect x="360" y="64" width="36" height="136" rx="4" fill="#f2c811" />
+    </g>
+  </g>
+
+  <!-- right-side small visuals -->
+  <g transform="translate(820,200)">
+    <rect x="0" y="0" width="336" height="320" rx="8" fill="#fff" stroke="#f0f5f9" />
+    <text x="16" y="26" font-size="12" fill="#748f9d">Canal - participação</text>
+
+    <!-- donut chart -->
+    <g transform="translate(168,180)">
+      <circle r="70" fill="#f7f8fb" />
+      <path d="M70 0 A70 70 0 0 1 20 66 L0 40 A40 40 0 0 0 70 0" fill="#f2c811"/>
+      <path d="M20 66 A70 70 0 0 1 -48 34 L-30 12 A40 40 0 0 0 20 66" fill="#0b3b5a"/>
+      <path d="M-48 34 A70 70 0 0 1 -4 -66 L18 -46 A40 40 0 0 0 -48 34" fill="#7fb3d5"/>
+    </g>
+
+    <text x="24" y="320" font-size="12" fill="#506b86">Orgânico • Pago • Indicação</text>
+  </g>
+</svg>

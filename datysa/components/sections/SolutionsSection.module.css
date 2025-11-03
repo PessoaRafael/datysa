@@ -1,0 +1,53 @@
+.section {
+  padding: 4rem 0;
+  background: #F4F7FA;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  text-align: center;
+  color: #0D3B66;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.solutionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .solutionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.solutionCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.solutionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.solutionTitle {
+  color: #0D3B66;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.solutionDescription {
+  color: #1E1E1E;
+  line-height: 1.6;
+}

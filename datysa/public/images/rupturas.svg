@@ -1,0 +1,62 @@
+<svg width="600" height="350" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="350" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="599" height="349" rx="7.5" stroke="#E6E6E6"/>
+  <rect x="0.5" y="0.5" width="599" height="349" rx="7.5" stroke="url(#paint0_linear_299_222)" stroke-opacity="0.2"/>
+  <defs>
+    <linearGradient id="paint0_linear_299_222" x1="600" y1="0" x2="0" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2196F3"/>
+      <stop offset="1" stop-color="#FF4081"/>
+    </linearGradient>
+  </defs>
+
+  <text x="30" y="40" font-family="Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#333333">Tendência de Ruptura (Últimos 6 Meses)</text>
+  <text x="30" y="65" font-family="Segoe UI, sans-serif" font-size="14" fill="#666666">Análise de inventário e otimização de estoque</text>
+
+  <text x="40" y="190" transform="rotate(-90 40 190)" font-family="Segoe UI, sans-serif" font-size="12" fill="#777777">Percentual</text>
+
+  <line x1="80" y1="90" x2="570" y2="90" stroke="#EEEEEE" stroke-width="1"/>
+  <line x1="80" y1="130" x2="570" y2="130" stroke="#EEEEEE" stroke-width="1"/>
+  <line x1="80" y1="170" x2="570" y2="170" stroke="#EEEEEE" stroke-width="1"/>
+  <line x1="80" y1="210" x2="570" y2="210" stroke="#EEEEEE" stroke-width="1"/>
+  <line x1="80" y1="250" x2="570" y2="250" stroke="#EEEEEE" stroke-width="1"/>
+
+  <text x="50" y="95" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">12%</text>
+  <text x="50" y="135" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">10%</text>
+  <text x="50" y="175" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">8%</text>
+  <text x="50" y="215" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">6%</text>
+  <text x="50" y="255" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">4%</text>
+
+  <rect x="90" y="90" width="40" height="160" fill="#2196F3" rx="3"/>
+  <text x="100" y="85" font-family="Segoe UI, sans-serif" font-size="11" fill="#333333">12%</text>
+  <circle cx="110" cy="90" r="4" fill="#2196F3"/>
+
+  <rect x="160" y="130" width="40" height="120" fill="#2196F3" rx="3"/>
+  <text x="170" y="125" font-family="Segoe UI, sans-serif" font-size="11" fill="#333333">10%</text>
+  <circle cx="180" cy="130" r="4" fill="#2196F3"/>
+
+  <rect x="230" y="170" width="40" height="80" fill="#2196F3" rx="3"/>
+  <text x="240" y="165" font-family="Segoe UI, sans-serif" font-size="11" fill="#333333">8%</text>
+  <circle cx="250" cy="170" r="4" fill="#2196F3"/>
+
+  <rect x="300" y="210" width="40" height="40" fill="#2196F3" rx="3"/>
+  <text x="310" y="205" font-family="Segoe UI, sans-serif" font-size="11" fill="#333333">6%</text>
+  <circle cx="320" cy="210" r="4" fill="#2196F3"/>
+
+  <rect x="370" y="225" width="40" height="25" fill="#2196F3" rx="3"/>
+  <text x="380" y="220" font-family="Segoe UI, sans-serif" font-size="11" fill="#333333">5%</text>
+  <circle cx="390" cy="225" r="4" fill="#2196F3"/>
+  
+  <rect x="440" y="250" width="40" height="0" fill="#28A745" rx="3"/> <text x="450" y="245" font-family="Segoe UI, sans-serif" font-size="11" fill="#28A745">4%</text>
+  <circle cx="460" cy="250" r="4" fill="#28A745"/>
+
+  <polyline points="110,90 180,130 250,170 320,210 390,225 460,250"
+            fill="none" stroke="#28A745" stroke-width="2"/>
+
+  <text x="95" y="270" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">JAN</text>
+  <text x="165" y="270" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">FEV</text>
+  <text x="235" y="270" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">MAR</text>
+  <text x="305" y="270" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">ABR</text>
+  <text x="375" y="270" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">MAI</text>
+  <text x="445" y="270" font-family="Segoe UI, sans-serif" font-size="11" fill="#777777">JUN</text>
+
+</svg>
