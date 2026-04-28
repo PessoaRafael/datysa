@@ -1,10 +1,11 @@
 
 .navbar {
-  background: var(--white);
+  background: var(--navbar-bg);
   position: sticky;
   top: 0;
   z-index: 1000;
   transition: var(--transition);
+  border-bottom: 1px solid var(--border);
 }
 
 .scrolled {
@@ -45,7 +46,7 @@
 
 .navLink {
   position: relative;
-  color: var(--gray-dark);
+  color: var(--text-secondary);
   font-weight: 500;
   padding: 0.5rem 0;
   transition: var(--transition);
@@ -96,9 +97,10 @@
   top: 80px;
   left: 0;
   right: 0;
-  background: var(--white);
+  background: var(--navbar-bg);
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-bottom: 1px solid var(--border);
 }
 
 .mobileNavContent {
@@ -108,9 +110,9 @@
 }
 
 .mobileNavLink {
-  color: var(--gray-dark);
+  color: var(--text-secondary);
   padding: 1rem 2rem;
-  border-bottom: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--border);
   transition: var(--transition);
 }
 
@@ -128,7 +130,7 @@
   display: block;
   width: 100%;
   background: var(--accent);
-  color: var(--white);
+  color: #fff;
   padding: 1rem;
   border-radius: 4px;
   font-weight: 500;
@@ -139,6 +141,28 @@
 .mobileCtaButton:hover {
   background: var(--accent-dark);
   transform: translateY(-2px);
+}
+
+/* Theme Toggle */
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.themeToggle:hover {
+  background: var(--primary-light);
+  color: #fff;
+  border-color: transparent;
 }
 
 /* Responsividade */

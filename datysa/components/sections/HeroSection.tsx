@@ -4,104 +4,172 @@ import styles from './HeroSection.module.css';
 export default function HeroSection() {
   return (
     <section className={styles.hero}>
-      {/* Bolhas decorativas */}
-      <div className={styles.bubble1}></div>
-      <div className={styles.bubble2}></div>
-      
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.textContent}>
+            <span className={styles.eyebrow}>Power BI · Excel · Banco de dados</span>
             <h1 className={styles.title}>
-              Transforme seus dados em <span>insights acionáveis</span>
+              Sua planilha vira um <span>dashboard</span> de verdade.
             </h1>
             <p className={styles.subtitle}>
-              Datysa oferece soluções de dados personalizadas para impulsionar o crescimento do seu negócio.
+              Pode ser Excel, Google Sheets ou banco de dados.
+              A gente transforma em painel no Power BI que qualquer pessoa do time consegue abrir e entender.
             </p>
             <div className={styles.buttons}>
-              <a href="#contact" className={styles.primaryButton}>
-                Converse com nossos especialistas
+              <a
+                href="https://wa.me/+5584994604608"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.primaryButton}
+              >
+                Falar no WhatsApp
               </a>
-              <a href="#cases" className={styles.secondaryButton}>
-                Ver cases de sucesso
+              <a href="#pricing" className={styles.secondaryButton}>
+                Ver preços
               </a>
             </div>
           </div>
           <div className={styles.imageContainer}>
             <div className={styles.dashboardPlaceholder}>
-              {/* Dashboard ilustração */}
-              <svg viewBox="0 0 420 240" className={styles.dashboardIcon}>
+              <svg viewBox="0 0 520 300" className={styles.dashboardIcon} xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <linearGradient id="barGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#3FA9F5" stopOpacity="0.95"/>
-                    <stop offset="100%" stopColor="#0D3B66" stopOpacity="0.95"/>
+                  <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#3FA9F5" stopOpacity="0.35"/>
+                    <stop offset="100%" stopColor="#3FA9F5" stopOpacity="0"/>
                   </linearGradient>
-                  <linearGradient id="barGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#2AC769" stopOpacity="0.95"/>
-                    <stop offset="100%" stopColor="#1e9f5a" stopOpacity="0.95"/>
-                  </linearGradient>
+                  <filter id="cs" x="-3%" y="-5%" width="108%" height="120%">
+                    <feDropShadow dx="0" dy="1" stdDeviation="2" floodColor="rgba(0,0,0,0.1)"/>
+                  </filter>
                 </defs>
-                
-                {/* Título */}
-                <rect x="20" y="20" width="380" height="40" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                <text x="35" y="45" fontSize="14" fontWeight="600" fill="#ffffff" letterSpacing="0.5">Dashboard de Vendas</text>
-                <circle cx="340" cy="40" r="3" fill="#2AC769" className={styles.liveIndicator}/>
-                <text x="350" y="43" fontSize="11" fill="rgba(255,255,255,0.7)">Ao vivo</text>
-                
-                {/* Cards de Métricas */}
-                <rect x="30" y="75" width="105" height="70" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" strokeWidth="1"/>
-                <text x="82.5" y="96" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Receita</text>
-                <text x="82.5" y="118" fontSize="22" fontWeight="700" fill="#ffffff" textAnchor="middle">R$ 24,5K</text>
-                
-                <rect x="155" y="75" width="105" height="70" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" strokeWidth="1"/>
-                <text x="207.5" y="96" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Crescimento</text>
-                <text x="207.5" y="118" fontSize="22" fontWeight="700" fill="#ffffff" textAnchor="middle">+12,5%</text>
-                
-                <rect x="280" y="75" width="105" height="70" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" strokeWidth="1"/>
-                <text x="332.5" y="96" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Pedidos</text>
-                <text x="332.5" y="118" fontSize="22" fontWeight="700" fill="#ffffff" textAnchor="middle">1.847</text>
-                
-                {/* Área do Gráfico */}
-                <rect x="30" y="165" width="380" height="50" rx="4" fill="rgba(255,255,255,0.04)"/>
-                
-                {/* Grid lines */}
-                <line x1="40" y1="200" x2="400" y2="200" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                <line x1="40" y1="175" x2="400" y2="175" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                <line x1="40" y1="215" x2="400" y2="215" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                
-                {/* Barras do Gráfico */}
-                <rect x="55" y="165" width="28" height="35" rx="2" fill="url(#barGradient1)"/>
-                <rect x="100" y="155" width="28" height="45" rx="2" fill="url(#barGradient1)"/>
-                <rect x="145" y="160" width="28" height="40" rx="2" fill="url(#barGradient1)"/>
-                <rect x="190" y="145" width="28" height="55" rx="2" fill="url(#barGradient2)"/>
-                <rect x="235" y="180" width="28" height="30" rx="2" fill="url(#barGradient1)"/>
-                <rect x="280" y="162" width="28" height="48" rx="2" fill="url(#barGradient1)"/>
-                <rect x="325" y="168" width="28" height="42" rx="2" fill="url(#barGradient1)"/>
-                
-                {/* Linha de Tendência */}
-                <polyline points="69,200 114,192 159,197 204,178 249,205 294,190 339,194" 
-                          fill="none" 
-                          stroke="#2AC769" 
-                          strokeWidth="2.5" 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round"/>
-                
-                {/* Pontos de Dados - Centro das barras */}
-                <circle cx="69" cy="200" r="4" fill="#ffffff"/>
-                <circle cx="114" cy="192" r="4" fill="#ffffff"/>
-                <circle cx="159" cy="197" r="4" fill="#ffffff"/>
-                <circle cx="204" cy="178" r="5" fill="#2AC769"/>
-                <circle cx="249" cy="205" r="4" fill="#ffffff"/>
-                <circle cx="294" cy="190" r="4" fill="#ffffff"/>
-                <circle cx="339" cy="194" r="4" fill="#ffffff"/>
-                
-                {/* Rótulos dos Dias - Centralizados nas barras */}
-                <text x="69" y="228" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Seg</text>
-                <text x="114" y="228" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Ter</text>
-                <text x="159" y="228" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Qua</text>
-                <text x="204" y="228" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Qui</text>
-                <text x="249" y="228" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Sex</text>
-                <text x="294" y="228" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Sáb</text>
-                <text x="339" y="228" fontSize="10" fill="rgba(255,255,255,0.6)" textAnchor="middle">Dom</text>
+
+                {/* ── Sidebar ── */}
+                <rect x="0" y="0" width="34" height="300" fill="#201F1E"/>
+                <rect x="9" y="10" width="16" height="1.5" rx="0.75" fill="rgba(255,255,255,0.6)"/>
+                <rect x="9" y="14.5" width="16" height="1.5" rx="0.75" fill="rgba(255,255,255,0.6)"/>
+                <rect x="9" y="19" width="16" height="1.5" rx="0.75" fill="rgba(255,255,255,0.6)"/>
+                <rect x="0" y="38" width="3" height="14" rx="1.5" fill="#F0B400"/>
+                <rect x="8" y="38" width="18" height="14" rx="2" fill="rgba(255,255,255,0.18)"/>
+                <rect x="8" y="59" width="18" height="10" rx="2" fill="rgba(255,255,255,0.08)"/>
+                <rect x="8" y="75" width="18" height="10" rx="2" fill="rgba(255,255,255,0.08)"/>
+                <rect x="8" y="91" width="18" height="10" rx="2" fill="rgba(255,255,255,0.08)"/>
+
+                {/* ── Header ── */}
+                <rect x="34" y="0" width="486" height="26" fill="white"/>
+                <line x1="34" y1="26" x2="520" y2="26" stroke="#EDEBE9" strokeWidth="0.75"/>
+                <text x="42" y="17" fontSize="7">
+                  <tspan fill="#A19F9D">Meu workspace  ›  </tspan>
+                  <tspan fontWeight="700" fill="#201F1E">Dashboard de Vendas</tspan>
+                </text>
+                <rect x="426" y="8" width="34" height="12" rx="3" fill="none" stroke="#8A8886" strokeWidth="0.75"/>
+                <text x="443" y="17" fontSize="6" fill="#605E5C" textAnchor="middle">Filtros</text>
+                <rect x="466" y="8" width="48" height="12" rx="3" fill="#0078D4"/>
+                <text x="490" y="17" fontSize="6" fill="white" textAnchor="middle" fontWeight="600">Compartilhar</text>
+
+                {/* ── Page tabs ── */}
+                <rect x="34" y="26" width="486" height="16" fill="#F3F2F1"/>
+                <rect x="44" y="26" width="64" height="16" fill="white"/>
+                <rect x="44" y="40" width="64" height="2" fill="#0078D4"/>
+                <text x="76" y="37" fontSize="7" fill="#201F1E" fontWeight="600" textAnchor="middle">Visão Geral</text>
+                <text x="140" y="37" fontSize="7" fill="#605E5C" textAnchor="middle">Detalhe</text>
+                <text x="192" y="37" fontSize="7" fill="#605E5C" textAnchor="middle">Relatório</text>
+
+                {/* ── Canvas ── */}
+                <rect x="34" y="42" width="486" height="258" fill="#F3F2F1"/>
+
+                {/* ── KPI Card 1: Receita Total ── */}
+                <rect x="42" y="48" width="150" height="54" rx="3" fill="white" filter="url(#cs)"/>
+                <text x="50" y="61" fontSize="6" fill="#605E5C" fontWeight="600" letterSpacing="0.5">RECEITA TOTAL</text>
+                <text x="50" y="82" fontSize="18" fontWeight="700" fill="#201F1E">R$ 847K</text>
+                <text x="50" y="95" fontSize="6.5" fill="#107C10">▲ 12,4% vs mês ant.</text>
+
+                {/* ── KPI Card 2: Clientes Ativos ── */}
+                <rect x="198" y="48" width="150" height="54" rx="3" fill="white" filter="url(#cs)"/>
+                <text x="206" y="61" fontSize="6" fill="#605E5C" fontWeight="600" letterSpacing="0.5">CLIENTES ATIVOS</text>
+                <text x="206" y="82" fontSize="18" fontWeight="700" fill="#201F1E">1.284</text>
+                <text x="206" y="95" fontSize="6.5" fill="#107C10">▲ 8,1% vs mês ant.</text>
+
+                {/* ── KPI Card 3: Meta ── */}
+                <rect x="354" y="48" width="150" height="54" rx="3" fill="white" filter="url(#cs)"/>
+                <text x="362" y="61" fontSize="6" fill="#605E5C" fontWeight="600" letterSpacing="0.5">META ATINGIDA</text>
+                <text x="362" y="82" fontSize="18" fontWeight="700" fill="#201F1E">94%</text>
+                <rect x="362" y="87" width="130" height="5" rx="2.5" fill="#F3F2F1"/>
+                <rect x="362" y="87" width="122" height="5" rx="2.5" fill="#F0B400"/>
+
+                {/* ── Bar Chart card ── */}
+                <rect x="42" y="110" width="216" height="180" rx="3" fill="white" filter="url(#cs)"/>
+                <text x="52" y="124" fontSize="7.5" fontWeight="700" fill="#201F1E">Receita por Mês</text>
+                <text x="246" y="124" fontSize="6" fill="#A19F9D" textAnchor="end">R$ mil</text>
+                {/* grid */}
+                <line x1="66" y1="270" x2="246" y2="270" stroke="#EDEBE9" strokeWidth="0.75"/>
+                <line x1="66" y1="253" x2="246" y2="253" stroke="#EDEBE9" strokeWidth="0.75"/>
+                <line x1="66" y1="236" x2="246" y2="236" stroke="#EDEBE9" strokeWidth="0.75"/>
+                <line x1="66" y1="219" x2="246" y2="219" stroke="#EDEBE9" strokeWidth="0.75"/>
+                <line x1="66" y1="202" x2="246" y2="202" stroke="#EDEBE9" strokeWidth="0.75"/>
+                {/* y-axis */}
+                <text x="64" y="272" fontSize="5.5" fill="#A19F9D" textAnchor="end">0</text>
+                <text x="64" y="255" fontSize="5.5" fill="#A19F9D" textAnchor="end">20</text>
+                <text x="64" y="238" fontSize="5.5" fill="#A19F9D" textAnchor="end">40</text>
+                <text x="64" y="221" fontSize="5.5" fill="#A19F9D" textAnchor="end">60</text>
+                <text x="64" y="204" fontSize="5.5" fill="#A19F9D" textAnchor="end">80</text>
+                {/* bars: x = 66,96,126,156,186,216 width=22 */}
+                <rect x="66" y="239" width="22" height="31" rx="1" fill="#0D3B66"/>
+                <rect x="96" y="235" width="22" height="35" rx="1" fill="#0D3B66"/>
+                <rect x="126" y="238" width="22" height="32" rx="1" fill="#0D3B66"/>
+                <rect x="156" y="226" width="22" height="44" rx="1" fill="#2AC769"/>
+                <rect x="186" y="233" width="22" height="37" rx="1" fill="#0D3B66"/>
+                <rect x="216" y="221" width="22" height="49" rx="1" fill="#0D3B66"/>
+                <text x="167" y="222" fontSize="6" fill="#2AC769" textAnchor="middle" fontWeight="700">R$61K</text>
+                {/* x-axis labels */}
+                <text x="77" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Jan</text>
+                <text x="107" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Fev</text>
+                <text x="137" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Mar</text>
+                <text x="167" y="281" fontSize="5.5" fill="#2AC769" textAnchor="middle" fontWeight="600">Abr</text>
+                <text x="197" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Mai</text>
+                <text x="227" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Jun</text>
+
+                {/* ── Area Chart card ── */}
+                <rect x="264" y="110" width="248" height="180" rx="3" fill="white" filter="url(#cs)"/>
+                <text x="274" y="124" fontSize="7.5" fontWeight="700" fill="#201F1E">Crescimento Acumulado</text>
+                {/* legend */}
+                <rect x="444" y="116" width="7" height="7" rx="1" fill="#0D3B66"/>
+                <text x="453" y="122" fontSize="5.5" fill="#605E5C">Receita</text>
+                <line x1="444" y1="131" x2="451" y2="131" stroke="#2AC769" strokeWidth="1.5" strokeDasharray="2.5 2"/>
+                <text x="453" y="134" fontSize="5.5" fill="#605E5C">Meta</text>
+                {/* grid */}
+                <line x1="286" y1="270" x2="500" y2="270" stroke="#EDEBE9" strokeWidth="0.75"/>
+                <line x1="286" y1="253" x2="500" y2="253" stroke="#EDEBE9" strokeWidth="0.75"/>
+                <line x1="286" y1="236" x2="500" y2="236" stroke="#EDEBE9" strokeWidth="0.75"/>
+                <line x1="286" y1="219" x2="500" y2="219" stroke="#EDEBE9" strokeWidth="0.75"/>
+                <line x1="286" y1="202" x2="500" y2="202" stroke="#EDEBE9" strokeWidth="0.75"/>
+                {/* y-axis */}
+                <text x="284" y="272" fontSize="5.5" fill="#A19F9D" textAnchor="end">0</text>
+                <text x="284" y="255" fontSize="5.5" fill="#A19F9D" textAnchor="end">200K</text>
+                <text x="284" y="238" fontSize="5.5" fill="#A19F9D" textAnchor="end">400K</text>
+                <text x="284" y="221" fontSize="5.5" fill="#A19F9D" textAnchor="end">600K</text>
+                <text x="284" y="204" fontSize="5.5" fill="#A19F9D" textAnchor="end">800K</text>
+                {/* area fill — points: x 290,325,360,395,430,465,500 */}
+                <path d="M290,262 L325,254 L360,258 L395,244 L430,237 L465,227 L500,218 L500,270 L290,270 Z" fill="url(#areaFill)"/>
+                <polyline points="290,262 325,254 360,258 395,244 430,237 465,227 500,218"
+                          fill="none" stroke="#0D3B66" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                {/* target dashed line */}
+                <line x1="290" y1="259" x2="500" y2="224" stroke="#2AC769" strokeWidth="1.25" strokeDasharray="4 3"/>
+                {/* data points */}
+                <circle cx="290" cy="262" r="2.5" fill="#0D3B66"/>
+                <circle cx="360" cy="258" r="2.5" fill="#0D3B66"/>
+                <circle cx="430" cy="237" r="2.5" fill="#0D3B66"/>
+                <circle cx="500" cy="218" r="4" fill="white" stroke="#0D3B66" strokeWidth="2"/>
+                {/* tooltip */}
+                <rect x="468" y="200" width="50" height="16" rx="3" fill="#201F1E"/>
+                <text x="493" y="211" fontSize="6.5" fill="white" textAnchor="middle" fontWeight="700">R$ 847K</text>
+                <polygon points="488,216 498,216 493,221" fill="#201F1E"/>
+                {/* x-axis labels */}
+                <text x="290" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Jan</text>
+                <text x="325" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Fev</text>
+                <text x="360" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Mar</text>
+                <text x="395" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Abr</text>
+                <text x="430" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Mai</text>
+                <text x="465" y="281" fontSize="5.5" fill="#A19F9D" textAnchor="middle">Jun</text>
+                <text x="500" y="281" fontSize="5.5" fill="#201F1E" textAnchor="middle" fontWeight="600">Jul</text>
               </svg>
             </div>
           </div>

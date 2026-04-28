@@ -1,6 +1,6 @@
 .section {
   padding: 4rem 1rem;
-  background: #fbfdff;
+  background: var(--bg);
 }
 
 .container {
@@ -9,9 +9,24 @@
   padding: 0 1rem;
 }
 
+.eyebrow {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(42,199,105,0.12);
+  border-radius: 99px;
+  padding: 4px 14px;
+  width: fit-content;
+  margin: 0 auto 0.75rem;
+}
+
 .title {
   font-size: 2rem;
-  color: #0d3b66;
+  color: var(--text-primary);
   font-weight: 700;
   text-align: center;
   margin-bottom: 0.25rem;
@@ -49,17 +64,16 @@
 }
 
 .cardMedia {
-  background: linear-gradient(180deg, rgba(13,59,102,0.03), rgba(27,127,237,0.02));
-  min-height: 150px;
+  background: #F3F2F1;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-.image {
+.dashSvg {
   width: 100%;
   height: auto;
-  object-fit: cover;
   display: block;
 }
 
@@ -73,7 +87,7 @@
 .cardTitle {
   margin: 0;
   font-size: 1.05rem;
-  color: #0d3b66;
+  color: var(--text-primary);
   font-weight: 700;
 }
 
